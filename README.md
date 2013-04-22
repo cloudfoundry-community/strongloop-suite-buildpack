@@ -76,7 +76,7 @@ Login into the Heroku:
 
 Clone the sample application or create your application:
 
-     git clone git://github.com/ramr/strongloop-paas-quickstart.git dynode
+     git clone git://github.com/strongloop/dist-paas-quickstart.git dynode
      # OR  git clone ${path_to_your_awesome_app}.git dynode
      # OR  cp -r ~/myapp/*  dynode
 
@@ -117,7 +117,7 @@ You can also run the application locally via:
 And when you are satisfied that all's ok, just push your app to Heroku:
 
     #  Create an app with this buildpack and push to it.
-    heroku apps:create -b git://github.com/ramr/strongloop-buildpack.git
+    heroku apps:create -b git://github.com/strongloop/dist-paas-buildpack.git
     git push heroku master
 
 This will download and configure StrongLoop Node on Heroku, install the
@@ -142,7 +142,7 @@ your OpenShift application.
 
     #  Add the quickstart upstream repo
     cd nodez
-    git remote add upstream git://github.com/ramr/strongloop-paas-quickstart.git
+    git remote add upstream git://github.com/strongloop/dist-paas-quickstart.git
     git pull -s recursive -X theirs upstream master
 
     cp -r $buildpackdir/samples/strongloop .
@@ -152,7 +152,7 @@ your OpenShift application.
     git push
 
 
-See https://github.com/ramr/strongloop-paas-quickstart/blob/master/README.md
+See https://github.com/strongloop/dist-paas-quickstart/blob/master/README.md
 for more details.
 
 
@@ -204,7 +204,7 @@ Target the CloudFoundry PaaS:
 
 Clone or create your application:
 
-     git clone git://github.com/ramr/strongloop-paas-quickstart.git dynode
+     git clone git://github.com/strongloop/dist-paas-quickstart.git dynode
      # OR  git clone ${path_to_your_awesome_app}.git dynode
      # OR  cp -r ~/myapp/*  dynode
 
@@ -242,8 +242,8 @@ You can also run the application locally via:
 
 And when you are satisfied that all's ok, push your app to CloudFoundry.
 
-    cf push dynode
-      --buildpack=git://github.com/ramr/strongloop-buildpack.git
+    cf push dynode                                                     \
+      --buildpack=git://github.com/strongloop/dist-paas-buildpack.git  \
       --no-create-services --instances 1 --memory 128M
 
 Note:  The first time you run vmc push, you will need to specify all the

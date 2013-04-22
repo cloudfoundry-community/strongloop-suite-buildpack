@@ -32,7 +32,7 @@ using this buildpack and finally push to your Heroku app.
     git add strongloop
     git commit . -m 'Added StrongLoop config files'
     #  Create an app with this buildpack and push to it.
-    heroku apps:create -b git://github.com/ramr/strongloop-buildpack.git
+    heroku apps:create -b git://github.com/strongloop/dist-paas-buildpack.git
     git push heroku master
 
 
@@ -48,7 +48,7 @@ your OpenShift application.
 
     #  Add the quickstart upstream repo
     cd nodez
-    git remote add upstream git://github.com/ramr/strongloop-quickstart-app.git
+    git remote add upstream git://github.com/strongloop/dist-paas-quickstart.git
     git pull -s recursive -X theirs upstream master
     cp -r $buildpackdir/samples/strongloop .
     git add strongloop
