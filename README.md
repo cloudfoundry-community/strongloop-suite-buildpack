@@ -29,7 +29,7 @@ Login into the Heroku:
 
 Clone the sample application or create your application:
 
-     git clone git://github.com/lulinqing/paas-quickstart.git strongloop
+     git clone git://github.com/strongloop/dist-paas-quickstart.git strongloop
      # OR  git clone ${path_to_your_awesome_app}.git strongloop
      # OR  cp -r ~/myapp/*  strongloop
 
@@ -43,7 +43,7 @@ StrongLoop sample configuration
 And when you are satisfied that all's ok, just push your app to Heroku:
 
     #  Create an app with this buildpack and push to it.
-    heroku apps:create -b git://github.com/lulinqing/paas-buildpack.git
+    heroku apps:create -b git://github.com/strongloop/dist-paas-buildpack.git
     git push heroku master
 
 This will download and configure StrongLoop Node on Heroku, install the
@@ -70,13 +70,13 @@ Login into the Cloud Foundry PaaS:
 
 Clone or create your application:
 
-     git clone git://github.com/lulinqing/paas-quickstart.git strongloop
+     git clone git://github.com/strongloop/dist-paas-quickstart.git strongloop
      # OR  git clone ${path_to_your_awesome_app}.git strongloop
      # OR  cp -r ~/myapp/*  strongloop
 
 And when you are satisfied that all's ok, push your app to Cloud Foundry.
 
-    cf push strongloop --buildpack=git://github.com/lulinqing/paas-buildpack.git
+    cf push strongloop --buildpack=git://github.com/strongloop/dist-paas-buildpack.git
 
 Note:  The first time you run cf push, you will need to specify all the
        parameters - this will create a new application at Cloud Foundry.
