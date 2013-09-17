@@ -41,7 +41,7 @@ Some apps might use app.js or main.js, and you can simply rename or clone it bef
 When you are satisfied that all's ok, push your app to Cloud Foundry.
 Just pick a name for your app and run the command:
 
-    $ cf push [your app name] --buildpack=git://github.com/strongloop/dist-paas-buildpack.git
+    $ cf push [your app name] --buildpack=git://github.com/cloudfoundry-community/strongloop-suite-buildpack.git
 
 Note:  The first time you run cf push, you will need to specify all the
        parameters - this will create a new application at Cloud Foundry.
