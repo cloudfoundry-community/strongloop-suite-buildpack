@@ -33,7 +33,7 @@ Explore the entire [documentation](http://docs.strongloop.com/).
 
 <h4> Deploying on Cloud Foundry </h4>
 
-Please use *server.js* as the name of the app's main script.
+Once you have created a sample app, please use *server.js* as the name of the app's main script.
 Some apps might use app.js or main.js, and you can simply rename or clone it before push:
 
     $ cp app.js server.js
