@@ -42,8 +42,12 @@ For example:
     $ cat Procfile
     web: slc run .
 
-When you are satisfied that all's ok, push your app to Cloud Foundry.
+When you are satisfied that all's ok, get ready to push your app to Cloud Foundry.
 
+There is a trick to speed up your push process and avoid possible conflict - remove local **node_modules** before push:
+
+    $ rm -rf node_modules
+    
     $ cf push --buildpack=git://github.com/cloudfoundry-community/strongloop-suite-buildpack.git
 
 Note:  The first time you run cf push, you will need to specify all the
