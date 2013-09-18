@@ -1,4 +1,4 @@
-### StrongLoop Suite Buildpack for Pivotal's CloudFoundry
+### StrongLoop Suite Buildpack for CloudFoundry
 
 StrongLoop Suite includes LoopBack, an open source mobile framework for creating RESTful, JSON, and other APIs. LoopBack ships with a mobile SDK and can be easily extended via community npm modules.
 
