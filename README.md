@@ -1,6 +1,7 @@
 ### StrongLoop Suite Buildpack for CloudFoundry
 
-StrongLoop Suite includes LoopBack, an open source mobile framework for creating RESTful, JSON, and other APIs. LoopBack ships with a mobile SDK and can be easily extended via community npm modules.
+StrongLoop Suite includes LoopBack, an open source mobile framework for creating mobile apps. 
+LoopBack ships with a mobile SDK and can be easily extended via community npm modules.
 
 Also included in StrongLoop Suite is StrongOps, an operational console specifically for Node.js applications. StrongOps provides deep performance monitoring including CPU profiling, EventLoop stats, and more.
 
